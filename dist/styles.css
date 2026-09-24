@@ -2068,7 +2068,7 @@ main > section {
 
 .mini-product-photo,
 .coffee-photo {
-  background-image: url("./images/coffee-collection-sprite.png");
+  background-image: url("./images/coffee-collection-sprite.webp");
   background-repeat: no-repeat;
   background-size: 400% 100%;
 }
@@ -2538,7 +2538,7 @@ main > section {
   height: 88%;
   min-width: 0;
   border-radius: 10px 10px 0 0;
-  background-image: url("./images/coffee-collection-sprite.png");
+  background-image: url("./images/coffee-collection-sprite.webp");
   background-repeat: no-repeat;
   background-size: 400% 100%;
   box-shadow: 0 9px 20px rgba(64, 43, 29, 0.12);
