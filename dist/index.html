@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="3分のコーヒー診断で、あなた好みのスペシャルティコーヒーを毎月ポストへ。ROAST NOTE。" />
+    <meta name="theme-color" content="#f7f3ec" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&family=Shippori+Mincho:wght@400;500;600;700&family=Yuji+Boku&family=Yuji+Syuku&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23173d2b'/%3E%3Cpath d='M44 13c-15 2-25 10-25 23 0 5 2 9 5 12 4-12 10-21 20-29-8 9-14 18-17 29 13-2 21-13 17-35Z' fill='%23f5f0e8'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css?v=white-logo" />
+    <title>ROAST NOTE｜毎月届く、あなた好みの一杯。</title>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="ROAST NOTE ホーム">
+          <img class="brand-white-logo" src="./images/roast-note-logo-white.png" width="2160" height="728" alt="" aria-hidden="true" />
+          <span class="brand-leaf" aria-hidden="true"></span>
+          <span class="brand-type">
+            <span class="brand-word" aria-hidden="true"></span>
+            <span class="brand-tagline">コーヒーで、日常に余白を。</span>
+          </span>
+        </a>
+
+        <div class="header-right">
+          <nav class="desktop-nav" aria-label="メインナビゲーション">
+            <a href="#diagnosis">コーヒー診断</a>
+            <a href="#coffee">コーヒーを選ぶ</a>
+            <a href="#plans">プラン</a>
+            <a href="#voices">お客様の声</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
+          <a class="header-cta" href="#application">
+            <span>定期便をはじめる</span>
+          </a>
+        </div>
+
+        <button class="menu-button" type="button" aria-label="メニューを開く" aria-controls="mobile-menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-menu" aria-label="スマートフォン用メニュー" hidden>
+        <a href="#diagnosis">コーヒー診断</a>
+        <a href="#coffee">コーヒーを選ぶ</a>
+        <a href="#plans">プラン</a>
+        <a href="#voices">お客様の声</a>
+        <a href="#faq">FAQ</a>
+        <a class="mobile-cta" href="#application">定期便をはじめる</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img src="./images/roast-note-hero-complete.png" alt="" />
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="hero-kicker">GOOD COFFEE, A BETTER YOU</p>
+            <h1 id="hero-title">毎月届く、<br />あなた好みの一杯。</h1>
+            <div class="price-inline" aria-label="初回限定980円、通常価格1,980円">
+              <span class="price-label">初回限定</span>
+              <span class="price-main"><strong>980</strong><small>円</small></span>
+              <span class="price-divider" aria-hidden="true"></span>
+              <span class="price-regular">通常価格 1,980円</span>
+            </div>
+            <p class="hero-description">
+              3分のコーヒー診断から、あなたの好みに合った<br class="desktop-break" />
+              スペシャルティコーヒーをセレクト。<br />
+              <span class="desktop-nowrap">世界各地の個性豊かなコーヒーを、毎月あなたのポストへ届けます。</span>
+            </p>
+            <div class="hero-action">
+              <button class="diagnosis-button" type="button" data-open-quiz>
+                <span>自分好みのコーヒーを診断する</span><span class="arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <p class="hero-handcopy">いいコーヒーが<br />つくるのは、<br />きっと、<br />いいわたし。</p>
+
+        </div>
+      </section>
+
+      <section class="reasons" id="reasons" aria-labelledby="reasons-title">
+        <div class="reasons-inner">
+          <header class="reasons-intro">
+            <p class="reasons-script">Why Choose Us?</p>
+            <h2 id="reasons-title">選ばれる4つの理由</h2>
+            <p>コーヒーがある暮らしを、<br />もっと身近に、もっと豊かに。</p>
+          </header>
+
+          <ol class="reason-list">
+            <li class="reason-item">
+              <div class="reason-top"><span class="reason-number">01</span><img class="reason-icon" src="./images/reason-select.png" alt="" /></div>
+              <h3>あなた好みにセレクト</h3>
+              <p>3分の診断で、<br />あなた好みの一杯を提案。</p>
+            </li>
+            <li class="reason-item">
+              <div class="reason-top"><span class="reason-number">02</span><img class="reason-icon" src="./images/reason-fresh.png" alt="" /></div>
+              <h3>焙煎したてをお届け</h3>
+              <p>香り高いコーヒーを<br />新鮮な状態で。</p>
+            </li>
+            <li class="reason-item">
+              <div class="reason-top"><span class="reason-number">03</span><img class="reason-icon" src="./images/reason-world.png" alt="" /></div>
+              <h3>毎月、新しい出会い</h3>
+              <p>世界各地の個性豊かな<br />コーヒーをセレクト。</p>
+            </li>
+            <li class="reason-item">
+              <div class="reason-top"><span class="reason-number">04</span><img class="reason-icon" src="./images/reason-delivery.png" alt="" /></div>
+              <h3>ポストに届く、手軽さ</h3>
+              <p>送料無料で、<br />ご自宅のポストへ。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="taste-check" id="diagnosis" aria-labelledby="taste-title">
+        <div class="taste-check-inner">
+          <div class="taste-content">
+            <header class="taste-heading">
+              <p class="taste-kicker">COFFEE TASTE CHECK</p>
+              <h2 id="taste-title">3分で見つかる、<br />あなた好みの<span class="taste-mobile-break"><br /></span>コーヒー。</h2>
+              <p class="taste-lead">いくつかの質問に答えるだけで、<br />酸味・苦味・コク・香りの好みを分析。<br />あなたに合いそうなコーヒーをご提案します。</p>
+            </header>
+
+            <ol class="taste-steps">
+              <li class="taste-step">
+                <span class="step-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" focusable="false"><path d="M12 20h23v9a11 11 0 0 1-11 11h-1a11 11 0 0 1-11-11v-9Zm23 3h2.5a5.5 5.5 0 0 1 0 11H34M9 42h31M20 6c-3 3 3 5 0 9m8-9c-3 3 3 5 0 9" /></svg>
+                </span>
+                <div>
+                  <p class="step-number">STEP <strong>01</strong></p>
+                  <h3>好みを教えてください</h3>
+                  <p>普段は好きな味や、コーヒーを飲むシーンなど、<br />いくつかの質問に答えるだけ。</p>
+                </div>
+              </li>
+              <li class="taste-step">
+                <span class="step-icon step-icon-bars" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" focusable="false"><path d="M8 40V27h7v13H8Zm13 0V16h7v24h-7Zm13 0V8h7v32h-7ZM5 40h38" /></svg>
+                </span>
+                <div>
+                  <p class="step-number">STEP <strong>02</strong></p>
+                  <h3>あなたのタイプを分析</h3>
+                  <p>回答をもとに、酸味・苦味・コク・香りの<br />バランスから、あなたの味の好みを分析します。</p>
+                </div>
+              </li>
+              <li class="taste-step">
+                <span class="step-icon step-icon-beans" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" focusable="false"><path d="M27 9c8-5 15-2 16 4 2 8-7 19-16 22-6 2-11 0-12-5-2-7 4-16 12-21Zm-11 7C9 14 4 18 5 24c1 8 10 14 18 14m12-26c0 7-6 9-10 13-3 3-5 6-5 10M8 21c6 1 9 6 12 11" /></svg>
+                </span>
+                <div>
+                  <p class="step-number">STEP <strong>03</strong></p>
+                  <h3>ぴったりの一杯をご提案</h3>
+                  <p>診断結果から、あなたに合いそうな<br />スペシャルティコーヒーをご提案します。</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="phone-stage" aria-label="コーヒー診断の画面イメージ">
+            <div class="phone-blob" aria-hidden="true"></div>
+            <img class="phone-image phone-image-question" src="images/quiz-phone-question.png" alt="コーヒー診断の質問画面" />
+            <img class="phone-image phone-image-result" src="images/quiz-phone-result.png" alt="コーヒー診断の結果画面" />
+
+            <img class="taste-decor decor-leaves-multi" src="images/decor-leaves-multi.png" alt="" aria-hidden="true" />
+            <img class="taste-decor decor-leaf-single" src="images/decor-leaf-single.png" alt="" aria-hidden="true" />
+            <img class="taste-decor decor-beans-pair" src="images/decor-beans-pair.png" alt="" aria-hidden="true" />
+            <img class="taste-decor decor-beans-cluster" src="images/decor-beans-cluster.png" alt="" aria-hidden="true" />
+
+            <p class="taste-handcopy taste-handcopy-top" aria-hidden="true">コーヒーで、<br />新しい出会いを。</p>
+            <p class="taste-handcopy taste-handcopy-bottom" aria-hidden="true">Good Coffee,<br />A Better You.</p>
+          </div>
+        </div>
+
+        <div class="taste-cta-wrap">
+          <button class="taste-cta" type="button" data-open-quiz>自分好みのコーヒーを診断する <span aria-hidden="true">→</span></button>
+          <p><span></span>約3分 / 無料<span></span></p>
+        </div>
+      </section>
+
+      <section class="choose-way" id="choose-way" aria-labelledby="choose-way-title">
+        <div class="choose-way-inner">
+          <header class="section-heading choose-way-heading">
+            <p class="section-kicker">CHOOSE YOUR WAY</p>
+            <h2 id="choose-way-title">好きな選び方で、<br class="choose-title-break" />あなたの一杯を。</h2>
+            <p>まだ好みがわからない方も、好きな豆が決まっている方も。<br />あなたにぴったりの方法で、特別なコーヒーとの出会いをお楽しみください。</p>
+          </header>
+          <div class="choose-heading-decor" aria-hidden="true">
+            <p>Good Coffee,<br />A Better You.</p>
+            <img src="images/decor-leaves-multi.png" alt="" />
+          </div>
+
+          <div class="choice-grid">
+            <article class="choice-card choice-card--quiz">
+              <div class="choice-copy">
+                <p class="choice-number">01 <span aria-hidden="true"></span></p>
+                <h3>診断から選ぶ</h3>
+                <p class="choice-audience choice-audience--terracotta">どれを選べばいいか迷っている方へ</p>
+                <p class="choice-description">いくつかの質問に答えるだけで、<br />あなたの好みに合うコーヒーを提案します。</p>
+              </div>
+              <div class="choice-phone-visual" aria-label="コーヒー診断の質問画面と結果画面">
+                <span class="choice-visual-circle" aria-hidden="true"></span>
+                <img class="choice-phone choice-phone--question" src="images/quiz-phone-question.png" alt="コーヒー診断の質問画面" />
+                <img class="choice-phone choice-phone--result" src="images/quiz-phone-result.png" alt="BALANCE TYPEの診断結果画面" />
+                <img class="choice-phone-leaves" src="images/decor-leaves-multi.png" alt="" aria-hidden="true" />
+                <img class="choice-phone-beans" src="images/decor-beans-pair.png" alt="" aria-hidden="true" />
+              </div>
+              <button class="choice-cta choice-cta--terracotta" type="button" data-open-quiz>診断してみる <span aria-hidden="true">→</span></button>
+            </article>
+
+            <article class="choice-card choice-card--browse">
+              <div class="choice-copy">
+                <p class="choice-number">02 <span aria-hidden="true"></span></p>
+                <h3>自分で選ぶ</h3>
+                <p class="choice-audience choice-audience--terracotta">好きな味や産地が決まっている方へ</p>
+                <p class="choice-description">産地・風味・焙煎度から、<br />気になるコーヒーを自由に選べます。</p>
+              </div>
+              <img class="choice-product-feature" src="images/collection-ethiopia.webp" alt="自然光の木製テーブルに置かれたROAST NOTEのコーヒーパッケージ" />
+              <ul class="choice-axes" aria-label="コーヒーの選び方">
+                <li>
+                  <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 39 18 17l7 12 6-9 12 19H5Zm7 0 8-13 8 13" /></svg>
+                  <strong>産地から選ぶ</strong><span>個性豊かな産地から</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M28 7c9-5 16-1 16 6 0 9-10 21-20 24-7 2-12-1-12-7 0-8 7-18 16-23Zm8 1c0 8-6 10-11 15-4 4-6 8-5 13" /></svg>
+                  <strong>味わいから選ぶ</strong><span>風味の特徴から</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 19h26v10a11 11 0 0 1-11 11h-4A11 11 0 0 1 9 29V19Zm26 3h3a5 5 0 0 1 0 10h-4M7 42h34M18 6c-3 3 3 5 0 9m8-9c-3 3 3 5 0 9" /></svg>
+                  <strong>飲み方から選ぶ</strong><span>飲むシーンに合わせて</span>
+                </li>
+              </ul>
+              <a class="choice-cta choice-cta--green" href="#coffee">コーヒーを見つける <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="coffee-collection" id="coffee" aria-labelledby="collection-title">
+        <div class="collection-inner">
+          <div class="collection-header">
+            <header class="section-heading collection-heading">
+              <p class="section-kicker">COFFEE COLLECTION</p>
+              <h2 id="collection-title">今日の気分から、<br class="collection-title-break" />選ぶ一杯。</h2>
+              <p>世界各地から厳選したスペシャルティコーヒーをラインナップ。<br />産地ごとの個性を、あなたの暮らしに。</p>
+            </header>
+            <div class="collection-decor" aria-hidden="true">
+              <p>一杯のコーヒーが、<br />よい一日をつくる。</p>
+              <img class="collection-decor-leaves" src="images/decor-leaves-multi.png" alt="" />
+              <img class="collection-decor-beans" src="images/decor-beans-pair.png" alt="" />
+            </div>
+          </div>
+
+          <div class="collection-filters" role="group" aria-label="コーヒーを味わいで絞り込む">
+            <button class="is-active" type="button" data-coffee-filter="all" aria-pressed="true">すべて</button>
+            <button type="button" data-coffee-filter="fruity" aria-pressed="false">フルーティー</button>
+            <button type="button" data-coffee-filter="chocolate" aria-pressed="false">チョコレート</button>
+            <button type="button" data-coffee-filter="nuts" aria-pressed="false">ナッツ</button>
+            <button type="button" data-coffee-filter="balance" aria-pressed="false">バランス</button>
+            <button type="button" data-coffee-filter="deep" aria-pressed="false">深煎り</button>
+          </div>
+
+          <div class="coffee-grid" aria-live="polite">
+            <article class="coffee-card" data-coffee-tags="fruity">
+              <img class="coffee-photo coffee-photo--ethiopia" src="images/collection-ethiopia.webp" alt="自然光のテーブルに置かれたエチオピア イルガチェフェのコーヒーバッグ" />
+              <div class="coffee-card-body">
+                <p class="coffee-origin">ETHIOPIA</p>
+                <h3>エチオピア<br />イルガチェフェ</h3>
+                <p class="coffee-notes">Floral / Peach / Bright</p>
+                <p class="coffee-description">華やかな香りと、やさしい桃のような甘み。すっきりとした後味です。</p>
+                <dl class="taste-meter">
+                  <div><dt>酸味</dt><dd aria-label="5段階中4"><i></i><i></i><i></i><i></i><i class="is-empty"></i></dd></div>
+                  <div><dt>苦味</dt><dd aria-label="5段階中2"><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>コク</dt><dd aria-label="5段階中3"><i></i><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>香り</dt><dd aria-label="5段階中5"><i></i><i></i><i></i><i></i><i></i></dd></div>
+                </dl>
+                <button class="coffee-detail" type="button" data-open-coffee>詳しく見る <span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+
+            <article class="coffee-card" data-coffee-tags="chocolate balance">
+              <img class="coffee-photo coffee-photo--colombia" src="images/collection-colombia.webp" alt="自然光のテーブルに置かれたコロンビア ウイラのコーヒーバッグ" />
+              <div class="coffee-card-body">
+                <p class="coffee-origin">COLOMBIA</p>
+                <h3>コロンビア<br />ウイラ</h3>
+                <p class="coffee-notes">Chocolate / Caramel / Smooth</p>
+                <p class="coffee-description">まろやかな甘みと、バランスの取れたコク。毎日の一杯にぴったりです。</p>
+                <dl class="taste-meter">
+                  <div><dt>酸味</dt><dd aria-label="5段階中2"><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>苦味</dt><dd aria-label="5段階中3"><i></i><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>コク</dt><dd aria-label="5段階中4"><i></i><i></i><i></i><i></i><i class="is-empty"></i></dd></div>
+                  <div><dt>香り</dt><dd aria-label="5段階中3"><i></i><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                </dl>
+                <button class="coffee-detail" type="button" data-open-coffee>詳しく見る <span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+
+            <article class="coffee-card" data-coffee-tags="nuts balance">
+              <img class="coffee-photo coffee-photo--brazil" src="images/collection-brazil.webp" alt="自然光のテーブルに置かれたブラジル サントスのコーヒーバッグ" />
+              <div class="coffee-card-body">
+                <p class="coffee-origin">BRAZIL</p>
+                <h3>ブラジル<br />サントス</h3>
+                <p class="coffee-notes">Nuts / Chocolate / Mild</p>
+                <p class="coffee-description">ナッツのような香ばしさと、やさしい甘み。すっきりとした飲み口です。</p>
+                <dl class="taste-meter">
+                  <div><dt>酸味</dt><dd aria-label="5段階中2"><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>苦味</dt><dd aria-label="5段階中2"><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>コク</dt><dd aria-label="5段階中3"><i></i><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>香り</dt><dd aria-label="5段階中3"><i></i><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                </dl>
+                <button class="coffee-detail" type="button" data-open-coffee>詳しく見る <span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+
+            <article class="coffee-card" data-coffee-tags="chocolate deep">
+              <img class="coffee-photo coffee-photo--guatemala" src="images/collection-guatemala.webp" alt="自然光のテーブルに置かれたグアテマラ アンティグアのコーヒーバッグ" />
+              <div class="coffee-card-body">
+                <p class="coffee-origin">GUATEMALA</p>
+                <h3>グアテマラ<br />アンティグア</h3>
+                <p class="coffee-notes">Cocoa / Spice / Rich</p>
+                <p class="coffee-description">カカオのようなコクと、ほのかなスパイス感。深みのある味わいです。</p>
+                <dl class="taste-meter">
+                  <div><dt>酸味</dt><dd aria-label="5段階中3"><i></i><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                  <div><dt>苦味</dt><dd aria-label="5段階中4"><i></i><i></i><i></i><i></i><i class="is-empty"></i></dd></div>
+                  <div><dt>コク</dt><dd aria-label="5段階中4"><i></i><i></i><i></i><i></i><i class="is-empty"></i></dd></div>
+                  <div><dt>香り</dt><dd aria-label="5段階中3"><i></i><i></i><i></i><i class="is-empty"></i><i class="is-empty"></i></dd></div>
+                </dl>
+                <button class="coffee-detail" type="button" data-open-coffee>詳しく見る <span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+      <section class="how-it-works" id="about" aria-labelledby="how-title">
+        <div class="how-inner">
+          <div class="how-intro">
+            <header class="how-heading">
+              <p class="section-kicker">HOW IT WORKS</p>
+              <h2 id="how-title">おいしいコーヒーが、<br />毎月あなたのもとへ。</h2>
+              <p class="how-lead">選んだコーヒーを、毎月ちょうどいいタイミングでお届け。<br />好みやライフスタイルに合わせて、無理なく続けられます。</p>
+            </header>
+            <div class="how-lifestyle">
+              <img src="images/how-lifestyle.png" width="1448" height="1086" loading="lazy" alt="自然光の入る部屋で、木製テーブルに置かれたコーヒーカップ" />
+              <p class="how-handcopy">コーヒーのある<br />暮らしが、<br />少しずつ、日常に。</p>
+            </div>
+          </div>
+          <ol class="how-steps">
+            <li class="how-step">
+              <div class="how-step-number"><span>01</span><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="18" cy="19" rx="10" ry="16" transform="rotate(25 18 19)"/><path d="M23 5c-12 7-2 20-12 28"/><ellipse cx="32" cy="31" rx="9" ry="14" transform="rotate(35 32 31)"/><path d="M39 20c-13 5-3 14-15 22"/></svg></div>
+              <h3>コーヒーを選ぶ</h3>
+              <p>診断結果から選んでも、<br />気になる豆を自分で選んでもOK。<br />あなたの好みに合うコーヒーを見つけましょう。</p>
+              <div class="how-step-photo"><img src="images/how-select.png" width="1536" height="1024" loading="lazy" alt="ROAST NOTEのクラフト紙コーヒーバッグと木の器に入ったコーヒー豆" /></div>
+            </li>
+            <li class="how-step">
+              <div class="how-step-number"><span>02</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m24 3 19 8v26l-19 9L5 37V11L24 3Z M5 11l19 9 19-9 M24 20v26 M14 7l20 9v14"/></svg></div>
+              <h3>毎月お届け</h3>
+              <p>焙煎したてのコーヒーを、<br />毎月ご自宅へお届けします。<br />コーヒーのある暮らしが、自然と続きます。</p>
+              <div class="how-step-photo"><img src="images/how-delivery.png" width="1448" height="1086" loading="lazy" alt="木製テーブルで深いグリーンのROAST NOTE配送ボックスを受け取る手元" /></div>
+            </li>
+            <li class="how-step">
+              <div class="how-step-number"><span>03</span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 10h18m8 0h14M4 24h8m8 0h24M4 38h23m8 0h9"/><circle cx="26" cy="10" r="4"/><circle cx="16" cy="24" r="4"/><circle cx="31" cy="38" r="4"/></svg></div>
+              <h3>いつでも変更OK</h3>
+              <p>コーヒーの変更・スキップ・<br />お届け日の調整も、オンラインで簡単。<br />あなたのペースで続けられます。</p>
+              <div class="how-step-photo"><img src="images/how-settings.png" width="1448" height="1086" loading="lazy" alt="スマートフォンでROAST NOTEのお届け日やコーヒーの変更、スキップを設定する様子" /></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="subscription-plan" id="plans" aria-labelledby="plans-title">
+        <div class="plans-inner">
+          <div class="plans-hero">
+            <header class="plans-heading">
+              <p class="section-kicker">SUBSCRIPTION PLAN</p>
+              <h2 id="plans-title"><span>あなたのペースで、</span><br />続けられる。</h2>
+              <p>飲む量やライフスタイルに合わせて、<br />ちょうどいいプランをお選びいただけます。</p>
+            </header>
+            <div class="plans-hero-photo">
+              <img src="images/how-lifestyle.png" width="1448" height="1086" loading="lazy" alt="自然光の入る部屋で、コーヒーマグとコーヒー豆のある暮らし" />
+              <p aria-hidden="true">コーヒーのある<br />暮らしが、<br />少しずつ、日常に。</p>
+            </div>
+          </div>
+
+          <aside class="plans-campaign" aria-label="STANDARDプラン初回限定キャンペーン">
+            <div class="plans-campaign-badge"><span>はじめての方</span><strong>限定</strong></div>
+            <div class="plans-campaign-main">
+              <p>まずは気軽に、<br />ROAST NOTEのコーヒーを。</p>
+              <div><span>STANDARDプラン</span><strong>初回 <b>¥980</b><small>（税込）</small></strong></div>
+            </div>
+            <div class="plans-campaign-note">
+              <p>通常価格よりお得に、<br />こだわりのコーヒーをお試しいただけます。</p>
+              <small>※ 定期便のご利用が初めての方が対象です。<br />※ 2回目以降はSTANDARDプランの通常価格となります。</small>
+            </div>
+          </aside>
+
+          <div class="plan-grid">
+            <article class="plan-card plan-card--light">
+              <div class="plan-card-heading"><span>01</span><h3>LIGHT</h3><p>少しずつ楽しみたい方へ</p></div>
+              <div class="plan-product plan-product--one"><img src="images/collection-ethiopia.webp" width="1024" height="768" loading="lazy" alt="コーヒー豆1袋のLIGHTプラン" /></div>
+              <div class="plan-price-zone"><dl class="plan-facts"><div><dt>内容量</dt><dd>200g × 1袋</dd></div><div><dt>通常月額</dt><dd>¥1,980 <small>（税込）</small></dd></div></dl></div>
+              <ul class="plan-benefits"><li>送料無料</li><li>いつでも変更・スキップOK</li><li>縛りなしで安心</li></ul>
+              <a class="plan-select" href="#application" data-plan="light">このプランを選ぶ <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="plan-card plan-card--standard">
+              <p class="plan-popular">＼　一番人気　／</p>
+              <div class="plan-card-heading"><span>02</span><h3>STANDARD</h3><p>毎日のコーヒーに、ちょうどいい</p></div>
+              <div class="plan-product plan-product--two"><img src="images/collection-ethiopia.webp" width="1024" height="768" loading="lazy" alt="エチオピアのコーヒーバッグ" /><img src="images/collection-colombia.webp" width="1024" height="768" loading="lazy" alt="コロンビアのコーヒーバッグ" /></div>
+              <div class="plan-price-zone"><dl class="plan-facts"><div><dt>内容量</dt><dd>200g × 2袋</dd></div><div><dt>通常月額</dt><dd>¥3,480 <small>（税込）</small></dd></div></dl><p class="plan-first-price"><span>初回限定</span><strong>¥980</strong><small>（税込）</small></p></div>
+              <ul class="plan-benefits"><li>送料無料</li><li>いつでも変更・スキップOK</li><li>人気の定番コーヒーをお届け</li></ul>
+              <a class="plan-select" href="#application" data-plan="standard">このプランではじめる <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="plan-card plan-card--rich">
+              <div class="plan-card-heading"><span>03</span><h3>RICH</h3><p>たっぷり楽しみたい方へ</p></div>
+              <div class="plan-product plan-product--three"><img src="images/collection-ethiopia.webp" width="1024" height="768" loading="lazy" alt="エチオピアのコーヒーバッグ" /><img src="images/collection-colombia.webp" width="1024" height="768" loading="lazy" alt="コロンビアのコーヒーバッグ" /><img src="images/collection-guatemala.webp" width="1024" height="768" loading="lazy" alt="グアテマラのコーヒーバッグ" /></div>
+              <div class="plan-price-zone"><dl class="plan-facts"><div><dt>内容量</dt><dd>200g × 3袋</dd></div><div><dt>通常月額</dt><dd>¥4,980 <small>（税込）</small></dd></div></dl></div>
+              <ul class="plan-benefits"><li>送料無料</li><li>いつでも変更・スキップOK</li><li>いろいろな味わいを楽しめる</li></ul>
+              <a class="plan-select" href="#application" data-plan="rich">このプランを選ぶ <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+
+          <section class="plan-common" aria-labelledby="plan-common-title">
+            <h3 id="plan-common-title"><span></span>すべてのプランに含まれます<span></span></h3>
+            <div class="plan-common-grid">
+              <article><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M3 12h27v24H3zM30 21h8l7 8v7H30zM10 39a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm28 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg><h4>送料無料</h4><p>毎月の送料はかかりません。</p></article>
+              <article><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M40 17a17 17 0 0 0-29-6l-4 5m1-10-1 10 10-1M8 31a17 17 0 0 0 29 6l4-5m-1 10 1-10-10 1"/></svg><h4>いつでも変更OK</h4><p>豆の種類・量・お届け頻度を<br />自由に変更できます。</p></article>
+              <article><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 8v7m32-7v7M5 14h38v29H5zM5 22h38M14 28h1m8 0h1m8 0h1m-19 7h1m8 0h1m8 0h1"/></svg><h4>スキップ・休止OK</h4><p>飲みきれない月はスキップ、<br />一時休止も可能です。</p></article>
+            </div>
+          </section>
+          <p class="plans-signature"><span></span>Good Coffee, A Better You.<span></span></p>
+        </div>
+        <img class="plans-decor plans-decor--leaf" src="images/decor-leaves-multi.png" width="1280" height="1280" loading="lazy" alt="" aria-hidden="true" />
+        <img class="plans-decor plans-decor--beans" src="images/decor-beans-cluster.png" width="1280" height="1280" loading="lazy" alt="" aria-hidden="true" />
+      </section>
+
+      <section class="customer-voice" id="voices" aria-labelledby="voice-title">
+        <div class="voice-inner">
+          <header class="voice-header">
+            <div class="voice-heading">
+              <p class="section-kicker">CUSTOMER VOICE</p>
+              <h2 id="voice-title"><span>コーヒーのある毎日が、</span><br />少し好きになりました。</h2>
+              <p>ROAST NOTEを楽しんでいる方の、<br />日々のコーヒー時間をのぞいてみました。</p>
+            </div>
+            <p class="voice-handcopy" aria-hidden="true">それぞれの暮らしに、<br />それぞれのコーヒーを。</p>
+          </header>
+
+          <article class="voice-feature">
+            <figure class="voice-feature-photo">
+              <img src="images/voice-main.png" width="1448" height="1086" loading="lazy" alt="自然光の入る窓辺でコーヒーカップを持つショートヘアの女性" />
+              <figcaption aria-hidden="true">Good Coffee,<br />A Better Me.</figcaption>
+            </figure>
+            <div class="voice-feature-copy">
+              <blockquote>「毎月届くのが、<br /><span>ちょっとした楽しみになりました。」</span></blockquote>
+              <p>仕事で忙しい毎日の中で、<br />ROAST NOTEのコーヒーが届くと、ほっと気持ちがやすらぎます。<br />いろいろな豆に出会えるので、毎月の楽しみになりました。</p>
+              <div class="voice-profile">
+                <img src="images/voice-main.png" width="1448" height="1086" loading="lazy" alt="" />
+                <div><p>30代・女性<br />会社員</p><span class="voice-stars" aria-label="5つ星評価">★★★★★</span></div>
+              </div>
+            </div>
+          </article>
+
+          <div class="voice-secondary">
+            <article class="voice-story">
+              <figure><img src="images/voice-user02.png" width="1448" height="1086" loading="lazy" alt="自然光の入る仕事スペースでコーヒーを飲む男性" /></figure>
+              <div class="voice-story-copy">
+                <blockquote>「診断のおかげで<br />自分の好みが分かりました。」</blockquote>
+                <p>コーヒーのことは詳しくなかったのですが、<br />診断を使うことで選びやすくなりました。<br />いろいろな味に出会えるので、<br />次は違うタイプにも挑戦してみたいです。</p>
+                <div class="voice-profile">
+                  <img src="images/voice-user02.png" width="1448" height="1086" loading="lazy" alt="" />
+                  <div><p>20代・男性<br />フリーランス</p><span class="voice-stars" aria-label="5つ星評価">★★★★★</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="voice-story">
+              <figure><img src="images/voice-user03.png" width="1448" height="1086" loading="lazy" alt="自然光の入る室内でコーヒーカップを持つ女性" /></figure>
+              <div class="voice-story-copy">
+                <blockquote>「スキップできるので<br />無理なく続けられます。」</blockquote>
+                <p>忙しい時期はスキップできるのが嬉しいです。<br />自分のペースで続けられるので、<br />これからも長く楽しみたいです。</p>
+                <div class="voice-profile">
+                  <img src="images/voice-user03.png" width="1448" height="1086" loading="lazy" alt="" />
+                  <div><p>40代・女性<br />主婦</p><span class="voice-stars" aria-label="5つ星評価">★★★★★</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <img class="voice-decor voice-decor--leaf" src="images/decor-leaves-multi.png" width="1280" height="1280" loading="lazy" alt="" aria-hidden="true" />
+        <img class="voice-decor voice-decor--beans" src="images/decor-beans-pair.png" width="1280" height="1280" loading="lazy" alt="" aria-hidden="true" />
+      </section>
+
+      <section class="faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="faq-inner">
+          <header class="faq-header">
+            <div class="faq-heading">
+              <p class="section-kicker">FAQ</p>
+              <h2 id="faq-title">よくあるご質問</h2>
+              <p>ご利用にあたっての疑問や不安にお答えします。</p>
+            </div>
+            <div class="faq-visual">
+              <p class="faq-handcopy" aria-hidden="true">はじめての方も<br />安心してご利用いただけます。</p>
+              <figure>
+                <img src="images/faq-coffee.png" width="1448" height="1086" loading="lazy" alt="自然光の入る木のテーブルに置かれたアイボリー色のコーヒーカップ" />
+              </figure>
+            </div>
+          </header>
+
+          <div class="faq-grid">
+            <div class="faq-column">
+              <article class="faq-item">
+                <h3>
+                  <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" data-faq-toggle>
+                    <span class="faq-q" aria-hidden="true">Q</span>
+                    <span class="faq-question-text">いつでも解約できますか？</span>
+                    <span class="faq-toggle-icon" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-answer" id="faq-answer-1" aria-hidden="true"><div><p>はい。マイページからいつでも解約手続きができます。<br />次回発送予定日の7日前までにお手続きいただくと、<br />次回分から停止されます。</p></div></div>
+              </article>
+
+              <article class="faq-item">
+                <h3>
+                  <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" data-faq-toggle>
+                    <span class="faq-q" aria-hidden="true">Q</span>
+                    <span class="faq-question-text">コーヒー豆の変更はできますか？</span>
+                    <span class="faq-toggle-icon" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-answer" id="faq-answer-2" aria-hidden="true"><div><p>はい。マイページから次回お届けするコーヒーを変更できます。<br />診断結果を参考に選ぶことも、その日の気分に合わせて<br />自由に選ぶこともできます。</p></div></div>
+              </article>
+
+              <article class="faq-item">
+                <h3>
+                  <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" data-faq-toggle>
+                    <span class="faq-q" aria-hidden="true">Q</span>
+                    <span class="faq-question-text">スキップ（お届けの一時停止）はできますか？</span>
+                    <span class="faq-toggle-icon" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-answer" id="faq-answer-3" aria-hidden="true"><div><p>はい。次回のお届けを1回スキップできます。<br />コーヒーが余っている時や旅行など、<br />ライフスタイルに合わせて調整できます。</p></div></div>
+              </article>
+            </div>
+
+            <div class="faq-column">
+              <article class="faq-item">
+                <h3>
+                  <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" data-faq-toggle>
+                    <span class="faq-q" aria-hidden="true">Q</span>
+                    <span class="faq-question-text">送料はかかりますか？</span>
+                    <span class="faq-toggle-icon" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-answer" id="faq-answer-4" aria-hidden="true"><div><p>定期便は全国送料無料です。<br />追加の送料を気にせず、<br />毎月コーヒーをお楽しみいただけます。</p></div></div>
+              </article>
+
+              <article class="faq-item">
+                <h3>
+                  <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" data-faq-toggle>
+                    <span class="faq-q" aria-hidden="true">Q</span>
+                    <span class="faq-question-text">豆のまま・粉から選べますか？</span>
+                    <span class="faq-toggle-icon" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-answer" id="faq-answer-5" aria-hidden="true"><div><p>はい。「豆のまま」または「粉」からお選びいただけます。<br />粉の場合は、一般的なドリップコーヒー向けの挽き方で<br />お届けします。</p></div></div>
+              </article>
+
+              <article class="faq-item">
+                <h3>
+                  <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" data-faq-toggle>
+                    <span class="faq-q" aria-hidden="true">Q</span>
+                    <span class="faq-question-text">どのくらいの量が届きますか？</span>
+                    <span class="faq-toggle-icon" aria-hidden="true"></span>
+                  </button>
+                </h3>
+                <div class="faq-answer" id="faq-answer-6" aria-hidden="true"><div><p>プランによって異なります。</p><dl><div><dt>LIGHT</dt><dd>200g × 1袋</dd></div><div><dt>STANDARD</dt><dd>200g × 2袋</dd></div><div><dt>RICH</dt><dd>200g × 3袋</dd></div></dl><p>ご自身のコーヒーを飲む頻度に合わせてお選びください。</p></div></div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <img class="faq-decor" src="images/faq-leaf-beans.png" width="1448" height="1086" loading="lazy" alt="" aria-hidden="true" />
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-cta-title">
+        <div class="final-cta-media">
+          <img src="images/final-cta.png" width="1774" height="887" loading="lazy" alt="自然光の入る木のテーブルに並ぶROAST NOTEのコーヒー、マグ、保存瓶と本" />
+        </div>
+        <div class="final-cta-inner">
+          <div class="final-cta-copy">
+            <p class="section-kicker">START YOUR COFFEE LIFE</p>
+            <h2 id="final-cta-title">毎月届く、<br />あなた好みの一杯を。</h2>
+            <p class="final-cta-lead">お気に入りのコーヒーと過ごす時間を、毎日の楽しみに。<br />あなたのペースに合ったプランから、<br />ROAST NOTEをはじめてみませんか？</p>
+            <a class="final-cta-button" href="#application">定期便をはじめる <span aria-hidden="true">→</span></a>
+            <p class="final-cta-note">初回980円から・送料無料・いつでもスキップOK</p>
+          </div>
+          <p class="final-cta-handcopy" aria-hidden="true">おいしいが、<br />つづく。</p>
+        </div>
+      </section>
+
+      <section class="subscription-form-section" id="application" aria-labelledby="subscription-form-title">
+        <div class="subscription-form-inner">
+          <div class="subscription-form-intro">
+            <div class="subscription-form-heading">
+              <p class="section-kicker">START YOUR COFFEE LIFE</p>
+              <h2 id="subscription-form-title">あなたのコーヒー時間を、<br />ここから。</h2>
+              <p class="subscription-form-lead">まずはプランとお届け内容を選んで、<br />必要事項をご入力ください。</p>
+              <p class="subscription-selected-plan" aria-live="polite" hidden>選択したプラン：<strong></strong></p>
+              <p class="subscription-form-disclaimer">※本サイトはポートフォリオ用の架空サイトです。実際のお申し込みはできません。</p>
+            </div>
+
+            <figure class="subscription-form-photo">
+              <img src="images/how-select.png" width="1536" height="1024" loading="lazy" alt="自然光の入る部屋のテーブルに置かれたROAST NOTEのコーヒー袋とマグカップ" />
+              <figcaption aria-hidden="true">コーヒーのある<br />やさしい毎日を。</figcaption>
+            </figure>
+
+            <div class="subscription-form-benefits">
+              <div class="subscription-form-benefit">
+                <span class="subscription-form-benefit-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M3 12h27v24H3zM30 21h8l7 8v7H30zM10 39a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm28 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg></span>
+                <div><h3>送料無料</h3><p>定期便は全国どこでも送料無料。<br />おいしいコーヒーを、手間なくご自宅へ。</p></div>
+              </div>
+              <div class="subscription-form-benefit">
+                <span class="subscription-form-benefit-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M40 17a17 17 0 0 0-29-6l-4 5m1-10-1 10 10-1M8 31a17 17 0 0 0 29 6l4-5m-1 10 1-10-10 1"/></svg></span>
+                <div><h3>いつでも変更OK</h3><p>プラン変更やお届け間隔の調整も、<br />マイページから簡単に行えます。</p></div>
+              </div>
+              <div class="subscription-form-benefit">
+                <span class="subscription-form-benefit-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 8v7m32-7v7M5 14h38v29H5zM5 22h38M14 28h1m8 0h1m8 0h1"/></svg></span>
+                <div><h3>スキップ可能</h3><p>飲みきれない時は、次回分をスキップ。<br />ライフスタイルに合わせて続けられます。</p></div>
+              </div>
+            </div>
+            <p class="subscription-form-signature" aria-hidden="true">Good Coffee,<br />A Better You.</p>
+          </div>
+
+          <div class="subscription-form-card">
+            <form id="coffee-subscription" novalidate autocomplete="off">
+              <div class="subscription-step-head">
+                <div><p class="subscription-step-label">STEP <span>01</span></p><h3>定期便を選ぶ</h3></div>
+                <p>ライフスタイルに合わせて<br />3つのプランからお選びいただけます。</p>
+              </div>
+
+              <fieldset class="subscription-plan-choices" aria-label="定期便プラン">
+                <legend class="visually-hidden">定期便プランを選ぶ</legend>
+                <label class="subscription-plan-choice">
+                  <input type="radio" name="plan" value="light" required />
+                  <span class="subscription-choice-body">
+                    <span class="subscription-choice-name">LIGHT</span>
+                    <span class="subscription-choice-subtitle">気軽に始めるシンプルなプラン</span>
+                    <span class="subscription-choice-image"><img src="images/collection-ethiopia.webp" width="1024" height="768" loading="lazy" alt="ROAST NOTEのコーヒー豆1袋" /></span>
+                    <span class="subscription-choice-amount">200g × 1袋</span>
+                    <span class="subscription-choice-price"><small>通常価格</small><strong>¥1,980 <em>（税込）</em></strong></span>
+                    <span class="subscription-choice-radio" aria-hidden="true"></span>
+                  </span>
+                </label>
+                <label class="subscription-plan-choice subscription-plan-choice--standard">
+                  <input type="radio" name="plan" value="standard" required checked />
+                  <span class="subscription-choice-body">
+                    <span class="subscription-choice-recommend">おすすめ</span>
+                    <span class="subscription-choice-name">STANDARD</span>
+                    <span class="subscription-choice-subtitle">一番人気のバランスプラン</span>
+                    <span class="subscription-choice-image subscription-choice-image--two"><img src="images/collection-ethiopia.webp" width="1024" height="768" loading="lazy" alt="" /><img src="images/collection-colombia.webp" width="1024" height="768" loading="lazy" alt="ROAST NOTEのコーヒー豆2袋" /></span>
+                    <span class="subscription-choice-amount">200g × 2袋</span>
+                    <span class="subscription-choice-first">初回 <strong>980円</strong><small>（税込）</small></span>
+                    <span class="subscription-choice-price"><small>通常価格</small><strong>¥3,480 <em>（税込）</em></strong></span>
+                    <span class="subscription-choice-radio" aria-hidden="true"></span>
+                  </span>
+                </label>
+                <label class="subscription-plan-choice">
+                  <input type="radio" name="plan" value="rich" required />
+                  <span class="subscription-choice-body">
+                    <span class="subscription-choice-name">RICH</span>
+                    <span class="subscription-choice-subtitle">たっぷり楽しむ贅沢なプラン</span>
+                    <span class="subscription-choice-image subscription-choice-image--three"><img src="images/collection-ethiopia.webp" width="1024" height="768" loading="lazy" alt="" /><img src="images/collection-colombia.webp" width="1024" height="768" loading="lazy" alt="" /><img src="images/collection-guatemala.webp" width="1024" height="768" loading="lazy" alt="ROAST NOTEのコーヒー豆3袋" /></span>
+                    <span class="subscription-choice-amount">200g × 3袋</span>
+                    <span class="subscription-choice-price"><small>通常価格</small><strong>¥4,980 <em>（税込）</em></strong></span>
+                    <span class="subscription-choice-radio" aria-hidden="true"></span>
+                  </span>
+                </label>
+              </fieldset>
+              <p class="subscription-field-error" id="subscription-plan-error" aria-live="polite"></p>
+
+              <div class="subscription-options">
+                <fieldset class="subscription-option-field">
+                  <legend>コーヒーの状態 <span class="subscription-required">必須</span></legend>
+                  <div class="subscription-grind-options">
+                    <label><input type="radio" name="grind" value="beans" required checked /><span>豆のまま</span></label>
+                    <label><input type="radio" name="grind" value="ground" required /><span>粉</span></label>
+                  </div>
+                  <p class="subscription-field-error" id="subscription-grind-error" aria-live="polite"></p>
+                </fieldset>
+                <div class="subscription-option-field">
+                  <label for="subscription-date">お届け開始日 <span class="subscription-required">必須</span></label>
+                  <select id="subscription-date" name="startDate" required>
+                    <option value="soon">最短でお届け（通常3〜5日で発送）</option>
+                    <option value="one-week">1週間後</option>
+                    <option value="two-weeks">2週間後</option>
+                  </select>
+                  <p class="subscription-field-error" id="subscription-date-error" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <div class="subscription-step-head subscription-step-head--second">
+                <div><p class="subscription-step-label">STEP <span>02</span></p><h3>お届け先を入力</h3></div>
+                <p>おいしいコーヒーを、<br />ご指定の住所へお届けします。</p>
+              </div>
+
+              <div class="subscription-address-grid">
+                <div class="subscription-input-field"><label for="subscription-name">お名前 <span class="subscription-required">必須</span></label><input id="subscription-name" name="customerName" type="text" placeholder="例）山田 太郎" required /><p class="subscription-field-error" id="subscription-name-error" aria-live="polite"></p></div>
+                <div class="subscription-input-field"><label for="subscription-email">メールアドレス <span class="subscription-required">必須</span></label><input id="subscription-email" name="email" type="email" inputmode="email" placeholder="例）yamada@example.com" required /><p class="subscription-field-error" id="subscription-email-error" aria-live="polite"></p></div>
+                <div class="subscription-input-field"><label for="subscription-phone">電話番号 <span class="subscription-required">必須</span></label><input id="subscription-phone" name="phone" type="tel" inputmode="tel" placeholder="例）090-1234-5678" required /><p class="subscription-field-error" id="subscription-phone-error" aria-live="polite"></p></div>
+                <div class="subscription-input-field"><label for="subscription-postal">郵便番号 <span class="subscription-required">必須</span></label><input id="subscription-postal" name="postalCode" type="text" inputmode="numeric" placeholder="例）150-0001" required /><p class="subscription-field-error" id="subscription-postal-error" aria-live="polite"></p></div>
+                <div class="subscription-input-field subscription-input-field--full"><label for="subscription-address">住所 <span class="subscription-required">必須</span></label><input id="subscription-address" name="address" type="text" placeholder="例）東京都渋谷区神南1-2-3 ROAST NOTEマンション101" required /><p class="subscription-field-error" id="subscription-address-error" aria-live="polite"></p></div>
+                <div class="subscription-input-field subscription-input-field--full"><label for="subscription-notes">備考（任意）</label><textarea id="subscription-notes" name="notes" rows="3" placeholder="例）配送に関するご要望があればご入力ください。"></textarea></div>
+              </div>
+
+              <div class="subscription-consent"><input id="subscription-consent" type="checkbox" name="consent" aria-label="利用規約とプライバシーポリシーに同意する" required /><span><button type="button" data-open-policy="terms">利用規約</button>・<button type="button" data-open-policy="privacy">プライバシーポリシー</button>に同意します。</span></div>
+              <p class="subscription-field-error" id="subscription-consent-error" aria-live="polite"></p>
+              <button class="subscription-submit" type="submit">この内容で申し込む <span aria-hidden="true">→</span></button>
+              <p class="subscription-submit-note">送信後、確認メッセージが表示されます。<br />※実際の個人情報は送信・保存されません。</p>
+              <div class="subscription-success" role="status" aria-live="polite" tabindex="-1" hidden>
+                <h4>お申し込みありがとうございます。</h4>
+                <p>ROAST NOTEの定期便をお選びいただきありがとうございます。<br />本サイトはポートフォリオ用の架空サイトのため、<br />実際の注文・決済は行われていません。</p>
+                <button type="button" data-subscription-close>フォームに戻る</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <img class="subscription-form-decor" src="images/faq-leaf-beans.png" width="1448" height="1086" loading="lazy" alt="" aria-hidden="true" />
+      </section>
+    </main>
+
+    <p class="portfolio-notice">※本サイトはポートフォリオ用の架空サイトです。実際のお申し込み・購入はできません。</p>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand footer-brand" href="#top" aria-label="ROAST NOTE ホーム">
+          <span class="brand-leaf" aria-hidden="true"></span>
+          <span class="brand-type">
+            <span class="brand-word" aria-hidden="true"></span>
+            <span class="footer-brand-tagline">GOOD COFFEE, A BETTER YOU.</span>
+          </span>
+        </a>
+
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <a href="#about">はじめての方へ</a>
+          <a href="#reasons">こだわり</a>
+          <a href="#diagnosis">コーヒー診断</a>
+          <a href="#coffee">お届けするコーヒー</a>
+          <a href="#voices">お客様の声</a>
+          <a href="#faq">よくあるご質問</a>
+        </nav>
+
+        <div class="footer-social" aria-label="ソーシャルメディア">
+          <span aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1" class="social-fill"/></svg>
+          </span>
+          <span aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8.2a3 3 0 0 0-2.1-2.1C17 5.6 12 5.6 12 5.6s-5 0-6.9.5A3 3 0 0 0 3 8.2 31 31 0 0 0 2.6 12 31 31 0 0 0 3 15.8a3 3 0 0 0 2.1 2.1c1.9.5 6.9.5 6.9.5s5 0 6.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8Z"/><path d="m10 9 5 3-5 3Z" class="social-fill"/></svg>
+          </span>
+          <span aria-label="LINE">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.2c0-4.1-4-7.4-9-7.4s-9 3.3-9 7.4c0 3.7 3.2 6.8 7.5 7.3.3.1.7.3.8.7l.1 1.5c0 .4.3.9 1 .5 3.8-2.1 6.1-4.2 7.2-5.9.9-1.2 1.4-2.6 1.4-4.1Z"/><path d="M7.2 9.2v4.1h2.2m1.1-4.1v4.1m1.4-4.1 2.1 4.1V9.2m4 0h-2.5v4.1H18" class="social-line"/></svg>
+          </span>
+        </div>
+
+        <p class="footer-copyright">© 2026 ROAST NOTE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="quiz-modal" data-quiz-modal hidden>
+      <div class="quiz-backdrop" data-close-quiz></div>
+      <section class="quiz-dialog" role="dialog" aria-modal="true" aria-labelledby="quiz-title" tabindex="-1">
+        <button class="quiz-close" type="button" aria-label="診断を閉じる" data-close-quiz>×</button>
+        <header class="quiz-header">
+          <p class="quiz-brand">ROAST NOTE</p>
+          <p class="quiz-kicker">COFFEE TASTE CHECK</p>
+        </header>
+        <div class="quiz-view" data-quiz-view aria-live="polite"></div>
+      </section>
+    </div>
+    <div class="quiz-modal detail-modal" data-coffee-modal hidden>
+      <div class="quiz-backdrop" data-close-modal></div>
+      <section class="quiz-dialog detail-dialog" role="dialog" aria-modal="true" aria-labelledby="coffee-modal-title" tabindex="-1">
+        <button class="quiz-close" type="button" aria-label="商品詳細を閉じる" data-close-modal>×</button>
+        <div data-coffee-content></div>
+        <a class="detail-modal-cta" href="#plans" data-coffee-plans>定期便のプランを見る <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+    <div class="quiz-modal policy-modal" data-policy-modal hidden>
+      <div class="quiz-backdrop" data-close-modal></div>
+      <section class="quiz-dialog policy-dialog" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title" tabindex="-1">
+        <button class="quiz-close" type="button" aria-label="規約を閉じる" data-close-modal>×</button>
+        <p class="quiz-brand">ROAST NOTE</p>
+        <h2 id="policy-modal-title"></h2>
+        <p data-policy-content></p>
+      </section>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
