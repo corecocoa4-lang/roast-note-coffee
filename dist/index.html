@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="3分のコーヒー診断で、あなた好みのスペシャルティコーヒーを毎月ポストへ。ROAST NOTE。" />
     <meta name="theme-color" content="#f7f3ec" />
-    <link rel="preload" as="image" href="./images/roast-note-hero-complete.webp" imagesrcset="./images/roast-note-hero-complete-1280.webp 1280w, ./images/roast-note-hero-complete.webp 1672w" imagesizes="100vw" fetchpriority="high" />
+    <link rel="preload" as="image" href="./images/roast-note-hero-complete.webp" imagesrcset="./images/roast-note-hero-complete-1280.webp 1280w, ./images/roast-note-hero-complete.webp 1672w" imagesizes="100vw" media="(min-width: 431px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="./images/hero-mobile-bright.webp" media="(max-width: 430px)" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Noto+Sans+JP:wght@400;500;600&family=Noto+Serif+JP:wght@400;500&family=Shippori+Mincho:wght@400;500;600&family=Yuji+Boku&family=Yuji+Syuku&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23173d2b'/%3E%3Cpath d='M44 13c-15 2-25 10-25 23 0 5 2 9 5 12 4-12 10-21 20-29-8 9-14 18-17 29 13-2 21-13 17-35Z' fill='%23f5f0e8'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="./styles.css?v=performance-20260924" />
+    <link rel="stylesheet" href="./styles.css?v=mobile-hero-20261004" />
     <title>ROAST NOTE｜毎月届く、あなた好みの一杯。</title>
   </head>
   <body>
@@ -57,7 +58,10 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true">
-          <img src="./images/roast-note-hero-complete.webp" srcset="./images/roast-note-hero-complete-1280.webp 1280w, ./images/roast-note-hero-complete.webp 1672w" sizes="(max-width: 900px) 100vw, 100vw" alt=""  width="1672" height="941"  fetchpriority="high" decoding="async" />
+          <picture>
+            <source media="(max-width: 430px)" srcset="./images/hero-mobile-bright.webp" width="941" height="1672" />
+            <img src="./images/roast-note-hero-complete.webp" srcset="./images/roast-note-hero-complete-1280.webp 1280w, ./images/roast-note-hero-complete.webp 1672w" sizes="(max-width: 900px) 100vw, 100vw" alt=""  width="1672" height="941"  fetchpriority="high" decoding="async" />
+          </picture>
         </div>
         <div class="hero-shade" aria-hidden="true"></div>
 
